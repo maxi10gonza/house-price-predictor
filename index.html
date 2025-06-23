@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Predictor de Precios de Casas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Predictor de Precios de Casas</h1>
+            <p>Usa Machine Learning para estimar el valor de tu propiedad</p>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <h2>Características de la Casa</h2>
+                <form id="predictionForm">
+                    <div class="form-group">
+                        <label for="area">Área (m²):</label>
+                        <input type="number" id="area" name="area_m2" min="30" max="500" value="120" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="habitaciones">Habitaciones:</label>
+                        <select id="habitaciones" name="habitaciones" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="baños">Baños:</label>
+                        <select id="baños" name="baños" required>
+                            <option value="1">1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="antiguedad">Antigüedad (años):</label>
+                        <input type="number" id="antiguedad" name="antiguedad" min="0" max="100" value="5" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="distancia">Distancia al centro (km):</label>
+                        <input type="number" id="distancia" name="distancia_centro" min="0" max="50" step="0.1" value="8" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="garaje">¿Tiene garaje?</label>
+                        <select id="garaje" name="garaje" required>
+                            <option value="0">No</option>
+                            <option value="1" selected>Sí</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jardin">¿Tiene jardín?</label>
+                        <select id="jardin" name="jardin" required>
+                            <option value="0">No</option>
+                            <option value="1" selected>Sí</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn" id="predictBtn">
+                        🔮 Predecir Precio
+                    </button>
+                </form>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Calculando precio...</p>
+                </div>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="card">
+                <h2>Información del Modelo</h2>
+                <div id="modelMetrics">
+                    <p>Cargando métricas del modelo...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="metrics-grid" id="metricsGrid" style="display: none;">
+            <!-- Las métricas se cargarán aquí dinámicamente -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
