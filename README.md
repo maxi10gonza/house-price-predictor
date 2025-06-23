@@ -115,21 +115,6 @@ La interfaz incluye:
 - Diseño responsive
 - Validación de datos
 
-## Estructura del Proyecto
-
-```
-house-price-predictor/
-├── train/
-│   └── train_house_price_model.py
-├── api_server.py
-├── index.html
-├── requirements.txt
-├── README.md
-├── house_price_model.pkl (generado)
-├── model_metrics.json (generado)
-└── feature_names.pkl (generado)
-```
-
 ## Testing
 
 ### Probar la API directamente:
