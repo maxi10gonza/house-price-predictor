@@ -1,1 +1,1 @@
-{"mae_test": 12493.374134214264, "r2_test": 0.9278814093457276, "rmse_test": 16640.675368496537, "n_samples": 600, "features": ["area_m2", "habitaciones", "ba\u00f1os", "antiguedad", "distancia_centro", "garaje", "jardin"]}
+{"mae_test": 12493.374134214262, "r2_test": 0.9278814093457276, "rmse_test": 16640.675368496533, "n_samples": 600, "features": ["area_m2", "habitaciones", "ba\u00f1os", "antiguedad", "distancia_centro", "garaje", "jardin"]}

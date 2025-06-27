@@ -83,7 +83,7 @@ const API_BASE = 'http://localhost:8000';
                     document.getElementById('result').innerHTML = `
                         <div class="result success">
                             <h3>Predicción Exitosa</h3>
-                            <div class="price">${result.precio_formateado}</div>
+                            <div class="price">USD ${result.precio_formateado}</div>
                             <p>Precio estimado para la propiedad</p>
                         </div>
                     `;

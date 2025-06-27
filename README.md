@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 ### 3. Entrenar el modelo
 ```bash
-python train_house_price_model.py
+python train_house_price_model.ipynb
 ```
 Este comando generará:
 - `house_price_model.pkl`: Modelo entrenado
