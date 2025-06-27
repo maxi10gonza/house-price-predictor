@@ -59,7 +59,6 @@ pip install -r requirements.txt
 
 ### 3. Entrenar el modelo
 ```bash
-cd train
 python train_house_price_model.py
 ```
 Este comando generará:
